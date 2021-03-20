@@ -1,15 +1,3 @@
-//isBalanced("()[]")
-//true--> done
-
-//isBalanced("([])")
-//true-->
-
-//isBalanced("({)}")
-//false-->
-
-//isBalanced("{[}")
-//false-->
-
 
 describe('#isBalanced', function() {
 	it('returns true if string is balanced', function(){
