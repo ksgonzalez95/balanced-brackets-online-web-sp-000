@@ -14,5 +14,3 @@ let isBalanced = (input) => {
       //do something
     }
   }
-  return true ? true : false
-}
