@@ -1,21 +1,20 @@
+let isBalanced = (input) => {
 
-describe('#isBalanced', function() {
-	it('returns true if string is balanced', function(){
-		let str = '([])[{}]{(())}'
-		expect(isBalanced(str)).toEqual(true)
-	})
-});
+  let brackets = "[]{}()<>"
+  let stack = []
 
-describe('#isBalanced', function() {
-	it('returns false if string is not balanced', function(){
-		let str = '([])[{}]{(([))}'
-		expect(isBalanced(str)).toEqual(false)
-	})
-});
+  for(let bracket of input) {
+    let bracketsIndex = brackets.indexOf(bracket)
 
-describe('#isBalanced', function() {
-	it('returns false even if string has all brackets matched', function(){
-		let str = '([])[{}]{([)]}'
-		expect(isBalanced(str)).toEqual(false)
-	})
-});
+    // if bracket is an opening bracket
+     if(bracketsIndex % 2 === 0) {
+       // push the closing bracket onto the stack
+      stack.push(bracketsIndex + 1)
+    } else {
+      //do something
+    }
+  }
+  return true ? true : false
+}
+
+
